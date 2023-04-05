@@ -6,7 +6,7 @@ const buttonClick = () => {
   const input = document.getElementById("input");
   const para = document.createElement("p");
   const inputValue = input.value;
-  if (inputValue == 0) {
+  if (inputValue == 0 || isNaN(inputValue)) {
     const textNode = document.createTextNode("invalid input");
     para.style.color = "red";
     para.appendChild(textNode);
